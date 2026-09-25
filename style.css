@@ -1,0 +1,52 @@
+@font-face { font-family: Archivo; src: url(/fonts/Archivo-Regular.ttf) format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: Archivo; src: url(/fonts/Archivo-Italic.ttf) format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: Archivo; src: url(/fonts/Archivo-SemiBold.ttf) format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: Archivo; src: url(/fonts/Archivo-ExtraBold.ttf) format("truetype"); font-weight: 800; font-display: swap; }
+
+:root {
+  --bg: #F3F2F2;
+  --surface: #EAE9E9;
+  --ink: #201E1D;
+  --muted: #5E5956;
+  --accent: #EC3013;
+  --accent-text: #AE1800;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; border-radius: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Archivo, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.page { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+
+header.site { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 32px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.wordmark { font-weight: 800; font-size: 42px; line-height: 0.92; letter-spacing: -0.03em; color: var(--ink); text-decoration: none; }
+nav.site { display: flex; gap: 20px; }
+nav.site a, .kicker { font-weight: 600; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-text); text-decoration: none; }
+nav.site a[aria-current="page"] { color: var(--ink); border-bottom: 2px solid var(--accent); }
+
+h1 { font-weight: 800; font-size: 34px; line-height: 1.05; letter-spacing: -0.02em; margin: 8px 0 16px; }
+h2 { font-weight: 800; font-size: 20px; letter-spacing: -0.01em; margin: 40px 0 8px; padding-top: 12px; border-top: 2px solid var(--ink); }
+h3 { font-weight: 600; font-size: 17px; margin: 24px 0 4px; }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent-text); text-underline-offset: 3px; }
+strong { font-weight: 600; }
+
+.lede { font-size: 20px; line-height: 1.45; }
+.meta { color: var(--muted); font-size: 14px; }
+.panel { background: var(--surface); border-left: 4px solid var(--accent); padding: 16px 18px; margin: 20px 0; }
+.panel p:last-child { margin-bottom: 0; }
+
+footer.site { margin-top: 56px; border-top: 2px solid var(--ink); padding-top: 12px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+footer.site a { color: var(--muted); }
