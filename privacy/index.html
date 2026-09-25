@@ -22,7 +22,7 @@
 <p class="meta">Effective 25 September 2026 · applies to Ibid. for iPhone and iPad</p>
 
 <div class="panel">
-  <p><strong>In short:</strong> Ibid. has no account, no analytics, no advertising and no tracking. The developer does not receive, collect or store any of your data. Your library stays on your device, and in your own iCloud only if you turn on backup. When you look a book up, its ISBN, or its title and author, is sent to public library catalogues.</p>
+  <p><strong>In short:</strong> Ibid. has no account, no analytics, no advertising and no tracking. The developer does not receive, collect or store any of your data. Your library stays on your device, in your own iCloud only if you turn on backup, and in your Obsidian vault only if you set up sync. When you look a book up, its ISBN, or its title and author, is sent to public library catalogues.</p>
 </div>
 
 <h2>Who is responsible</h2>
@@ -49,13 +49,22 @@
 <h2>Optional iCloud backup</h2>
 <p>If you turn on <strong>Automatic backup</strong>, Ibid. saves recovery copies of your library to your own iCloud Drive, in a container belonging to the app. This is stored by Apple under your Apple Account; the developer has no access to it. It is off until you turn it on.</p>
 
-<h2>Things you choose to send elsewhere</h2>
-<p>When you export, share, or connect a notes vault, Ibid. writes or hands over exactly what you chose, to the place you chose: a file, another app through the share sheet, or a folder you picked. Ibid. does not connect to any notes service or account. What happens next is governed by that place.</p>
+<h2>Obsidian sync</h2>
+<p>Obsidian sync is optional and off until you set it up. When you choose your Obsidian vault:</p>
+<ul>
+  <li>Ibid. creates one folder in it, named <strong>Ibid</strong>, and keeps one note per book there, with its details, passages, notes, reading status and rating. It reads that folder to bring back edits you make in Obsidian. The rest of your vault is never read or changed.</li>
+  <li>If you also choose a folder of your own book notes, Ibid. reads the notes in that folder to match them to your books, adds a link to each matched note, and writes a note for any book that has none. Removing the link removes what Ibid. added; your notes stay.</li>
+  <li>Ibid. syncs when you open it, and from time to time in the background, which iOS allows. All of this is file reading and writing on your device, in the folder you gave Ibid. access to. Ibid. does not connect to an Obsidian account or to any server.</li>
+</ul>
+<p><strong>Where your vault goes next is up to you.</strong> If your vault is synced by a service such as Obsidian Sync, iCloud Drive, Remotely Save or Synology Drive, that service copies the notes Ibid. writes, including your passages, to wherever it stores your vault, under its own terms and privacy policy. Ibid. does not talk to these services and the developer has no access to them. To stop, remove the connection in Ibid.; the notes already in your vault stay until you delete them.</p>
+
+<h2>Exports and sharing</h2>
+<p>When you export or share, Ibid. hands over exactly what you chose to the place you chose: a file, another app through the share sheet, or your photo library. What happens next is governed by that place.</p>
 
 <h2>Keeping and deleting your data</h2>
 <ul>
   <li>Your data is kept for as long as it is on your device and in your backups.</li>
-  <li>To delete everything, delete the app. To delete the iCloud backup, open Settings, tap your name, then iCloud, then Manage Storage (or Storage), and delete Ibid.’s data.</li>
+  <li>To delete everything, delete the app. Notes Ibid. wrote to your Obsidian vault stay in the vault; delete its <strong>Ibid</strong> folder if you want them gone. To delete the iCloud backup, open Settings, tap your name, then iCloud, then Manage Storage (or Storage), and delete Ibid.’s data.</li>
   <li>Because the developer holds none of your data, there is nothing to request, correct or delete from the developer. You can still write with any question.</li>
 </ul>
 
